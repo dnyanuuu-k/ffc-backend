@@ -1,0 +1,1 @@
+sequelize-auto -o "../models/files" -d ffc -h localhost -u postgres -p 5432 -x Rathod123 -e postgres -a ../sequelize.config.json --cm p --cp c --cf p 

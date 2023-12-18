@@ -1,0 +1,3 @@
+Minio is S3 Object Storage similar to AWSS3
+
+minio server --console-address :9090 ./uploads

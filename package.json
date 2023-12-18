@@ -1,0 +1,47 @@
+{
+  "license": "UNLICENSED",
+  "private": true,
+  "dependencies": {
+    "@tus/file-store": "^1.0.0",
+    "@tus/s3-store": "^1.0.0",
+    "@tus/server": "^1.0.0",
+    "aws-sdk": "^2.1304.0",
+    "axios": "^1.6.1",
+    "bcryptjs": "^2.4.3",
+    "blurhash": "^2.0.5",
+    "canvas": "^2.11.2",
+    "cors": "^2.8.5",
+    "country-list-with-dial-code-and-flag": "^5.0.2",
+    "crypto-js": "^4.1.1",
+    "express": "^4.18.2",
+    "fake-indexeddb": "^4.0.2",
+    "form-data": "^4.0.0",
+    "google-libphonenumber": "^3.2.32",
+    "https": "^1.0.0",
+    "jsonwebtoken": "^9.0.0",
+    "moment": "^2.29.4",
+    "multer": "^1.4.5-lts.1",
+    "node-fetch": "2",
+    "pg": "^8.8.0",
+    "razorpay": "^2.9.1",
+    "sequelize": "^6.28.0",
+    "sharp": "^0.32.1",
+    "socket.io": "^4.5.4",
+    "tinode-sdk": "^0.22.10",
+    "tinycolor2": "^1.6.0",
+    "ws": "^8.14.2",
+    "xmlhttprequest": "^1.8.0"
+  },
+  "devDependencies": {
+    "eslint": "^7.32.0 || ^8.2.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-plugin-import": "^2.25.2"
+  },
+  "scripts": {
+    "start": "node index.js",
+    "burn": "nodemon index.js",
+    "lint": "eslint --fix --ext .js,.jsx .",
+    "db_models": "cd scripts && ./sequelize_auto.sh",
+    "s3": "minio server --console-address :9090 ./uploads"
+  }
+}
